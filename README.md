@@ -1,5 +1,3 @@
-# toppa_et_al_dc_m_quadrifasciata
-data and scripts used in the analyses
 # Homing Ability of *Melipona quadrifasciata* in Fragmented Landscapes
 
 This repository contains the complete analytical pipeline for the study **"Homing ability of *Melipona quadrifasciata* in fragmented landscapes extends to 7.5 km"** published in Discover Conservation.
