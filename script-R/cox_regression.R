@@ -26,7 +26,7 @@ library(survminer); library(ggplot2); library(performance); library(readr); libr
 
 # Adjust the parameters for data input and output--------------------------
 xlsx   <- "C:/r_studio/data_statistic.xlsx"
-OUTDIR <- "C:/r_studio/corridors_by_period"
+OUTDIR <- "C:/r_studio/cox_regression"
 
 if (!dir.exists(OUTDIR)) dir.create(OUTDIR, recursive = TRUE)
 
@@ -244,4 +244,5 @@ print(evt_tbl)
 write_csv(evt_tbl, file.path(OUTDIR,"events_censoring_summary.csv"))
 
 cat("\nArquivos gerados em:\n", OUTDIR, "\n")
+
 
