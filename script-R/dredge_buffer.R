@@ -24,8 +24,8 @@ library(DHARMa); library(broom.mixed); library(performance); library(ggplot2)
 library(stringr); library(ggeffects); library(scales); library(readr); library(tibble)
 
 # Adjust the parameters for data input and output---------------------------------------------
-xlsx   <- "G:/Meu Drive/UFSCar/projetos/UNIVERSAL_CNPq_2023/publicacoes/new_distance/nova_versao_artigo/submeter_discover/revisao/sheet_all_data_statistic_discovery.xlsx"
-OUTDIR <- "G:/Meu Drive/UFSCar/projetos/UNIVERSAL_CNPq_2023/publicacoes/new_distance/nova_versao_artigo/submeter_discover/revisao/outputs2"
+xlsx   <- "C:/r_studio/statistic_data.xlsx"
+OUTDIR <- "C:/r_studio/dredge_buffer"
 if (!dir.exists(OUTDIR)) dir.create(OUTDIR, recursive = TRUE)
 
 # 2) Read data and minimum typing -------------------------------------------
@@ -211,3 +211,4 @@ suppressWarnings({
 })
 
 cat("\nArquivos (BUFFER) gerados em:\n", OUTDIR, "\n")
+
