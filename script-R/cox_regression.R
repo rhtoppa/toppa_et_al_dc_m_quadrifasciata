@@ -25,8 +25,9 @@ library(survival); library(coxme); library(broom); library(broom.mixed)
 library(survminer); library(ggplot2); library(performance); library(readr); library(tibble)
 
 # Adjust the parameters for data input and output--------------------------
-xlsx   <- "G:/Meu Drive/UFSCar/projetos/UNIVERSAL_CNPq_2023/publicacoes/new_distance/nova_versao_artigo/submeter_discover/revisao/sheet_all_data_statistic_discovery.xlsx"
-OUTDIR <- "G:/Meu Drive/UFSCar/projetos/UNIVERSAL_CNPq_2023/publicacoes/new_distance/nova_versao_artigo/submeter_discover/revisao/cox_outputs"
+xlsx   <- "C:/r_studio/data_statistic.xlsx"
+OUTDIR <- "C:/r_studio/corridors_by_period"
+
 if (!dir.exists(OUTDIR)) dir.create(OUTDIR, recursive = TRUE)
 
 # Read data and minimum typing — **INSERT PERIOD HERE** --------------
@@ -243,3 +244,4 @@ print(evt_tbl)
 write_csv(evt_tbl, file.path(OUTDIR,"events_censoring_summary.csv"))
 
 cat("\nArquivos gerados em:\n", OUTDIR, "\n")
+
