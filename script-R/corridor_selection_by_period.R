@@ -21,8 +21,8 @@ library(readxl); library(dplyr); library(tidyr); library(stringr)
 library(readr);  library(tibble); library(scales); library(purrr)
 
 # Adjust the parameters for data input and output----------------------
-XLSX    <- "G:/Meu Drive/UFSCar/projetos/UNIVERSAL_CNPq_2023/publicacoes/new_distance/nova_versao_artigo/submeter_discover/revisao/sheet_all_data_statistic_discovery.xlsx"
-OUTDIR  <- "G:/Meu Drive/UFSCar/projetos/UNIVERSAL_CNPq_2023/publicacoes/new_distance/nova_versao_artigo/submeter_discover/revisao/corridors_by_period"
+XLSX    <- "C:/r_studio/data_statistic.xlsx"
+OUTDIR  <- "C:/r_studio/corridors_by_period"
 if (!dir.exists(OUTDIR)) dir.create(OUTDIR, recursive = TRUE)
 
 # Score weights (adjusted according to GLMM: fixed or standardized z-beta values)
@@ -173,4 +173,5 @@ priorizar_por_periodo <- function(df_period,
   write_csv(seasonal_corridors,file.path(OUTDIR, "candidate_corridors_SEASONAL.csv"))
   
   cat("\nArquivos gerados em:\n", OUTDIR, "\n")
+
   
